@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayc4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:text="请输入支付密码"
+            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:drawableLeft="@mipmap/ic_pay_close" />
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/graye3"
+            android:layout_height="1dp" />
+        <com.example.virtualkeyboardview.PasswordEditText
+            android:id="@+id/edit_pass"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            app:passwordColor="@color/black"
+            android:layout_marginBottom="10dp"
+            app:passwordNumber="6"
+            app:passwordRadius="4dp"
+            app:divisionLineColor="@color/graye3"
+            app:bgColor="@color/graye3"
+            app:bgCorner="1dp"
+            app:bgSize="1dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/graye3"
+            android:layout_height="1dp" />
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:background="@color/graye3"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:numColumns="3"
+            android:listSelector="@color/graye3"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
